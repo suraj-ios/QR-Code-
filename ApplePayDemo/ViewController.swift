@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // Get define string to encode
-        let myString = "https://github.com/suraj-ios?tab=repositories"
+        let myString = "https://link.clintrialreferapp.com/?ibi=com%2Eios%2Eclintrialreferapp&isi=1475066830&apn=com%2Eclintrialrefer%2Eapp&link=https%3A%2F%2Fweb%2Eclintrialreferapp%2Ecom%3FtId%3D21030018%26appId%3D4"
         // Get data from the string
         let data = myString.data(using: String.Encoding.ascii)
         // Get a QR CIFilter

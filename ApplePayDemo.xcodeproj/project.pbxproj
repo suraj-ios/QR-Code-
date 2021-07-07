@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4286317D8B3CD19C1584D09B /* Pods_ApplePayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D1E8D00C4B715E4F889520 /* Pods_ApplePayDemo.framework */; };
 		51794CEB2689C31B006990E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51794CEA2689C31B006990E3 /* AppDelegate.swift */; };
 		51794CED2689C31B006990E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51794CEC2689C31B006990E3 /* SceneDelegate.swift */; };
 		51794CEF2689C31B006990E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51794CEE2689C31B006990E3 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07D1E8D00C4B715E4F889520 /* Pods_ApplePayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApplePayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DA86B615080369F3400CF7 /* Pods-ApplePayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayDemo.release.xcconfig"; path = "Target Support Files/Pods-ApplePayDemo/Pods-ApplePayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		51794CE72689C31B006990E3 /* ApplePayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplePayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51794CEA2689C31B006990E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51794CEC2689C31B006990E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		51794CF32689C321006990E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51794CF62689C321006990E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51794CF82689C321006990E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816877F096899A241905D672 /* Pods-ApplePayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApplePayDemo.debug.xcconfig"; path = "Target Support Files/Pods-ApplePayDemo/Pods-ApplePayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4286317D8B3CD19C1584D09B /* Pods_ApplePayDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				51794CE92689C31B006990E3 /* ApplePayDemo */,
 				51794CE82689C31B006990E3 /* Products */,
+				A991E556508A2EB99410DE49 /* Pods */,
+				8C2D34E53F260E56C2033151 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ApplePayDemo;
 			sourceTree = "<group>";
 		};
+		8C2D34E53F260E56C2033151 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07D1E8D00C4B715E4F889520 /* Pods_ApplePayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A991E556508A2EB99410DE49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				816877F096899A241905D672 /* Pods-ApplePayDemo.debug.xcconfig */,
+				34DA86B615080369F3400CF7 /* Pods-ApplePayDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51794CFB2689C321006990E3 /* Build configuration list for PBXNativeTarget "ApplePayDemo" */;
 			buildPhases = (
+				4D0EC25A2D9EF94A89CB3C11 /* [CP] Check Pods Manifest.lock */,
 				51794CE32689C31B006990E3 /* Sources */,
 				51794CE42689C31B006990E3 /* Frameworks */,
 				51794CE52689C31B006990E3 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D0EC25A2D9EF94A89CB3C11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApplePayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51794CE32689C31B006990E3 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		51794CFC2689C321006990E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816877F096899A241905D672 /* Pods-ApplePayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -301,6 +353,7 @@
 		};
 		51794CFD2689C321006990E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34DA86B615080369F3400CF7 /* Pods-ApplePayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
